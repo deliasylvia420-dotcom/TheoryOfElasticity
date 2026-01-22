@@ -4,7 +4,7 @@ import numpy as np
 import managers.v1_x
 import managers.v2_y
 
-def create_material_body(h, quadrant=3):
+def create_material_body(h, quadrant):
     t_start = 0.0
 
     if quadrant == 3:
