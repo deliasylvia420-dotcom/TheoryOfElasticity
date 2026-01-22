@@ -7,13 +7,22 @@ import managers.v2_y
 def create_material_body(h, quadrant=3):
     t_start = 0.0
 
-    if quadrant == 3: #наш случай 
+    if quadrant == 3:
         x_min, x_max = -1.0, 0.0
+        y_min, y_max = -1.0, 0.0
+    elif quadrant == 2:
+        x_min, x_max = -1.0, 0.0
+        y_min, y_max = 1.0, 0.0
+    elif quadrant == 1:
+        x_min, x_max = 1.0, 0.0
+        y_min, y_max = 1.0, 0.0
+    elif quadrant == 4:
+        x_min, x_max = 1.0, 0.0
         y_min, y_max = -1.0, 0.0
     else:
-        #если параметр не передан по дефолту
         x_min, x_max = -1.0, 0.0
         y_min, y_max = -1.0, 0.0
+
 
     steps = int(1.0 / h) + 1
     x_coords = np.linspace(x_min, x_max, steps)
