@@ -12,12 +12,12 @@ def create_material_body(h, quadrant):
         y_min, y_max = -1.0, 0.0
     elif quadrant == 2:
         x_min, x_max = -1.0, 0.0
-        y_min, y_max = 1.0, 0.0
+        y_min, y_max = 0.0, 1.0
     elif quadrant == 1:
-        x_min, x_max = 1.0, 0.0
-        y_min, y_max = 1.0, 0.0
+        x_min, x_max = 0.0, 1.0
+        y_min, y_max = 0.0, 1.0
     elif quadrant == 4:
-        x_min, x_max = 1.0, 0.0
+        x_min, x_max = 0.0, 1.0
         y_min, y_max = -1.0, 0.0
     else:
         x_min, x_max = -1.0, 0.0
